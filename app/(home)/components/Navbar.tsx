@@ -1,4 +1,6 @@
 "use client";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
@@ -26,11 +28,14 @@ export const Navbar = () => {
   function handelOpenMenu(){
     setOpenMenu((prev)=> !prev)
   }
+  useGSAP(()=>{
+    gsap.fromTo("#navbar",{y:"-50px",opacity:0},{y:0,duration:0.3,opacity:1})
+  },[theme])
  
   return (
     <>
-      <nav className="max-w-[1440px] mx-auto hidden lg:fixed left-0 right-0 top-0 z-50 backdrop-blur-md rounded-lg lg:flex justify-around py-2">
-        <div className="flex justify-center items-center">
+      <nav id="navbar" className="max-w-[1440px] mx-auto hidden lg:fixed left-0 right-0 top-0 z-50 backdrop-blur-md rounded-lg lg:flex justify-around py-2 overflow-hidden opacity-0">
+        <div className="flex justify-center items-center overflow-hidden">
           <Image
             src={`${
               theme == "dark"
@@ -85,7 +90,7 @@ export const Navbar = () => {
       {/* mobile navbar */}
       <nav className="fixed top-0 right-0 left-0 lg:hidden mx-auto overflow-hidden px-2 backdrop-blur-md rounded-lg">
 
-        <div className="h-[50px] flex justify-between items-center">
+        <div id="navbar" className="h-[50px] flex justify-between items-center opacity-0">
           <div className="flex justify-center items-center w-[25%] h-[90%]">
             <Image
               src={`${
@@ -96,6 +101,7 @@ export const Navbar = () => {
               width={100}
               height={100}
               alt="main logo"
+              style={{color:"blue"}}
             />
           </div>
           <div className="flex justify-center items-center gap-1 sm:gap-3 sm:pr-3">
@@ -111,7 +117,7 @@ export const Navbar = () => {
             </div>
             <button className="relative inline-flex h-9 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
               <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-blue-600 px-1 sm:px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-blue-600 px-2 sm:px-3 py-1 text-[12px] sm:text-sm font-medium text-white backdrop-blur-3xl custome-text-shadow">
                 Request Demo
               </span>
             </button>

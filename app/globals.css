@@ -2,6 +2,25 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+/* For WebKit browsers */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: black; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(white,blue); /* Scrollbar color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: white; /* Scrollbar on hover */
+}
+
  html {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -15,10 +34,10 @@ body {
 }
 
 .custome-text-shadow{
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 0.4px 1.5px 2px black;
 }
 .our-clients{
-  text-shadow: 2px 1px 1px black;
+  text-shadow: 0.4px 1px 0.5px black;
 }
 
 
