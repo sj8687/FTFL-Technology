@@ -2,7 +2,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { GiStripedSun } from "react-icons/gi";
 import { HiBars3 } from "react-icons/hi2";
