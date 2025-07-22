@@ -3,8 +3,8 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "MyNextHire: Your Premier Platform For Hiring Solutions",
-  description: "Build By MyNextHire",
+  title: "FTFL Technology",
+  description: "Build By FTFL Technology",
 };
 
 export default function RootLayout({

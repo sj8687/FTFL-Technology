@@ -37,33 +37,31 @@ export const Navbar = () => {
       <nav id="navbar" className="max-w-[1440px] mx-auto hidden lg:fixed left-0 right-0 top-0 z-50 backdrop-blur-md rounded-lg lg:flex justify-around py-2 overflow-hidden opacity-0">
         <div className="flex justify-center items-center overflow-hidden">
           <Image
-            src={`${
-              theme == "dark"
-                ? "/mnh-logo-header-black.webp"
-                : "/mnh-logo-header.webp"
-            }`}
+            src= "/fftl.png"
+           
             alt="main logo"
-            height={100}
-            width={100}
+            height={200}
+            width={200}
+            className="dark:bg-gray-200 p-1 rounded-md"
           />
         </div>
 
-        <div className="flex justify-center items-center">
-          <ul className="flex gap-6 justify-center items-center">
+        <div className="flex justify-center text-[16px] mt-3 font-medium items-center">
+          <ul className="flex gap-7 justify-center items-center">
             <li className="cursor-pointer hover:text-slate-500 hover:dark:text-blue-500">
-              Platform
+              About
             </li>
             <li className="cursor-pointer hover:text-slate-500 hover:dark:text-blue-500">
-              Solutions
+              Services
             </li>
             <li className="cursor-pointer hover:text-slate-500 hover:dark:text-blue-500">
-              Customers
+              Careers
             </li>
             <li className="cursor-pointer hover:text-slate-500 hover:dark:text-blue-500">
-              Resources
+              Blogs
             </li>
             <li className="cursor-pointer hover:text-slate-500 hover:dark:text-blue-500">
-              Company
+              Contact
             </li>
           </ul>
         </div>
@@ -91,17 +89,17 @@ export const Navbar = () => {
       <nav className="fixed top-0 right-0 left-0 lg:hidden mx-auto overflow-hidden px-2 backdrop-blur-md rounded-lg">
 
         <div id="navbar" className="h-[50px] flex justify-between items-center opacity-0">
-          <div className="flex justify-center items-center w-[25%] h-[90%]">
+          <div className="flex justify-center items-center w-[45%] h-[90%] ">
             <Image
-              src={`${
-                theme == "dark"
-                  ? "/mnh-logo-header-black.webp"
-                  : "/mnh-logo-header.webp"
-              }`}
-              width={100}
-              height={100}
+              src=
+                   "/fftl.png"
+              
+              width={150}
+              height={150}
               alt="main logo"
               style={{color:"blue"}}
+                          className="dark:bg-gray-200 p-1 rounded-md"
+
             />
           </div>
           <div className="flex justify-center items-center gap-1 sm:gap-3 sm:pr-3">
