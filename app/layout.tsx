@@ -35,7 +35,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="bg-gradient-to-b from-white to-blue-500 dark:from-black">
+      <body className="bg-gradient-to-b from-white to-blue-500 dark:from-slate-950">
         {children}
       </body>
     </html>

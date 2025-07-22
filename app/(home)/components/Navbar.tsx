@@ -85,20 +85,20 @@ export const Navbar = () => {
           </button>
         </div>
       </nav>
+
+
       {/* mobile navbar */}
       <nav className="fixed top-0 right-0 left-0 lg:hidden mx-auto overflow-hidden px-2 backdrop-blur-md rounded-lg">
 
         <div id="navbar" className="h-[50px] flex justify-between items-center opacity-0">
           <div className="flex justify-center items-center w-[45%] h-[90%] ">
             <Image
-              src=
-                   "/fftl.png"
-              
+              src="/fftl.png"
               width={150}
               height={150}
               alt="main logo"
               style={{color:"blue"}}
-                          className="dark:bg-gray-200 p-1 rounded-md"
+              className="dark:bg-skate-300 p-1 rounded-md"
 
             />
           </div>
