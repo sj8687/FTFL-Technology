@@ -93,12 +93,12 @@ export const Navbar = () => {
         <div id="navbar" className="h-[50px] flex justify-between items-center opacity-0">
           <div className="flex justify-center items-center w-[45%] h-[90%] ">
             <Image
-              src="/fftl.png"
+              src="/FFtl.png"
               width={150}
               height={150}
               alt="main logo"
               style={{color:"blue"}}
-              className="dark:bg-skate-300 p-1 rounded-md"
+              className="dark:bg-slate-300 p-1 rounded-md"
 
             />
           </div>
