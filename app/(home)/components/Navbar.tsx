@@ -42,7 +42,7 @@ export const Navbar = () => {
             alt="main logo"
             height={200}
             width={200}
-            className="dark:bg-gray-200 p-1 rounded-md"
+            className="dark:bg-slate-300 p-1 rounded-md"
           />
         </div>
 

@@ -41,8 +41,8 @@ export const Hero = () => {
 
   useGSAP(() => {
     const t1 = gsap.timeline();
-    t1.fromTo("#hedd", { opacity: 0 }, { opacity: 1, duration: 0.4 })
-    t1.fromTo("#main-heading", { opacity: 0 }, { opacity: 1, duration: 0.6 })
+    t1.fromTo("#hedd", { opacity: 0 }, { opacity: 1, duration: 0.6 })
+    t1.fromTo("#main-heading", { opacity: 0 }, { opacity: 1, duration: 0.5 })
     t1.fromTo("#main-description", { opacity: 0 }, { opacity: 1, duration: 0.3 })
     t1.fromTo("#main-btn1", { opacity: 0 }, { opacity: 100, duration: 0.6, ease: "power2.in" }, "<")
     t1.fromTo("#main-btn2", { opacity: 0 }, { opacity: 100, duration: 0.6, ease: "power2.in" }, "<")
@@ -55,7 +55,7 @@ export const Hero = () => {
     <section className="max-w-[1440px] mx-auto px-2 ">
       <div className="h-dvh mt-[170px]">
         <div className="flex justify-center  mb-0">
-          <div id="hedd" className="bg-blue-200  border text-black mobo text--600 font-semibold rounded-full sm:px-5 px-3 py-2 shadow-[0_0_10px_rgba(400,700,900,80)] text-sm">
+          <div id="hedd" className="bg-blue-200  border text-black mobo text--600 font-semibold rounded-full sm:px-5 px-3 py-2 shadow-[0_0_10px_rgba(900,700,900,80)] text-sm">
             💕 Solving 1000+ Problems!
           </div>
         </div>
@@ -68,9 +68,8 @@ export const Hero = () => {
             <Button id="main-btn1" className="md:p-6 md:text-[18px] bg-blue-500 hover:bg-blue-600 shadow: text-white custome-text-shadow opacity-0">From Scratch to Success</Button>
           </div>
 
-          <p id="our-clients" className={`mt-[55px] md:mt-[85px] text-xl md:text-2xl our-clients font-bold opacity-0`}>Our Clients</p>
 
-          <div id="clients" className="w-full h-[60px] mt-9 overflow-hidden opacity-0">
+          <div id="clients" className="w-full h-[60px] mt-28 overflow-hidden opacity-0">
             <div className={`flex gap-5 md:gap-9 overflow-x-hidden ${isDesktop ? "animate-infinite-scroll2" : "animate-infinite-scroll"}`}>
               {
                 items.map((curClient, index) => {
