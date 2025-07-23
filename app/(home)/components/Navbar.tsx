@@ -40,8 +40,8 @@ export const Navbar = () => {
             src= "/FFtl.png"
            
             alt="main logo"
-            height={200}
-            width={200}
+            height={10}
+            width={170}
             className="dark:bg-slate-300 p-1 rounded-md"
           />
         </div>
@@ -95,7 +95,7 @@ export const Navbar = () => {
             <Image
               src="/FFtl.png"
               width={150}
-              height={150}
+              height={10}
               alt="main logo"
               style={{color:"blue"}}
               className="dark:bg-slate-300 p-1 rounded-md"
